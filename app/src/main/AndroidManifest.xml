@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logomini"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Taquería"
+        tools:targetApi="31">
+        <activity
+            android:name=".burritos"
+            android:parentActivityName=".elegirOrden"
+            android:label="Burritos"
+            android:exported="false" />
+        <activity
+            android:name=".tortas"
+            android:parentActivityName=".elegirOrden"
+            android:label="Tortas"
+            android:exported="false" />
+        <activity
+            android:name=".tacos"
+            android:label="Tacos"
+            android:parentActivityName=".elegirOrden"
+            android:exported="false" />
+        <activity
+            android:name=".obtenerOrden"
+            android:exported="false"
+            android:label="Orden Elegida"
+            android:parentActivityName=".elegirOrden" />
+        <activity
+            android:name=".bebidas"
+            android:exported="false"
+            android:label="Bebidas"
+            android:parentActivityName=".elegirOrden" />
+        <activity
+            android:name=".direccion"
+            android:exported="false"
+            android:label="Dirección"
+            android:parentActivityName=".tarjeta" />
+        <activity
+            android:name=".tarjeta"
+            android:exported="false"
+            android:label="Tarjeta"
+            android:parentActivityName=".metodoDePago" />
+        <activity
+            android:name=".metodoDePago"
+            android:exported="false"
+            android:label="Método De Pago"
+            android:parentActivityName=".elegirOrden" />
+        <activity
+            android:name=".elegirOrden"
+            android:exported="false"
+            android:label="Elegir Orden"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Carnitas Mi Lindo Quiroga">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

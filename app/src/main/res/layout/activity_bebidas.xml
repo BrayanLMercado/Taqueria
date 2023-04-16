@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bebidas">
+
+    <Button
+        android:id="@+id/sevenUp"
+        android:layout_width="116dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:text="Seven Up"
+        app:backgroundTint="#A52323"
+        app:layout_constraintBottom_toTopOf="@+id/Fanta"
+        app:layout_constraintEnd_toStartOf="@+id/cantSeven"
+        app:layout_constraintStart_toEndOf="@+id/deleteSeven"
+        app:layout_constraintTop_toBottomOf="@+id/coca" />
+
+    <EditText
+        android:id="@+id/cantCocas"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/cantSeven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coca"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/cantSeven"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/cantFanta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sevenUp"
+        app:layout_constraintTop_toBottomOf="@+id/cantCocas"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/cantFanta"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Fanta"
+        app:layout_constraintTop_toBottomOf="@+id/cantSeven"
+        tools:text="0" />
+
+    <ImageButton
+        android:id="@+id/deleteSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteFanta"
+        app:layout_constraintEnd_toStartOf="@+id/sevenUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteCoca"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <Button
+        android:id="@+id/coca"
+        android:layout_width="116dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:text="Coca Cola"
+        app:backgroundTint="#A52323"
+        app:layout_constraintBottom_toTopOf="@+id/sevenUp"
+        app:layout_constraintEnd_toStartOf="@+id/cantCocas"
+        app:layout_constraintStart_toEndOf="@+id/deleteCoca"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/deleteCoca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteSeven"
+        app:layout_constraintEnd_toStartOf="@+id/coca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteFanta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Fanta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteSeven"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <Button
+        android:id="@+id/Fanta"
+        android:layout_width="116dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="315dp"
+        android:text="Fanta"
+        app:backgroundTint="#A52323"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cantFanta"
+        app:layout_constraintStart_toEndOf="@+id/deleteFanta"
+        app:layout_constraintTop_toBottomOf="@+id/sevenUp" />
+
+    <Button
+        android:id="@+id/confirmar"
+        android:layout_width="131dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="135dp"
+        android:text="Confirmar Bebidas"
+        app:backgroundTint="#A52323"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cantFanta" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
