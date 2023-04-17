@@ -40,7 +40,7 @@ public class elegirOrden extends AppCompatActivity {
             }
         });
 
-        burrito= (Button)(findViewById(R.id.Burritos));
+        burrito= (Button)(findViewById(R.id.Quesadillas));
         burrito.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
